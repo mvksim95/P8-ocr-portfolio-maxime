@@ -1,13 +1,15 @@
 import '../styles/Layout.sass';
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import VideoBackground from '../components/VideoBackground';
 // import logoheader from '../assets/images/logoheader.png'
 // import logoFooter from '../assets/images/LogoFooter.png'
 
 const Layout = () => {
   return (
     <div className='Layout'>
-      
+      <VideoBackground />
+      <div className='content'>
       <header>
         <section className='Header'>
           <div className='logo-site'>
@@ -37,6 +39,7 @@ const Layout = () => {
           </p>
         </div>
       </footer>
+      </div>
     </div>
   );
 };

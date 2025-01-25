@@ -10,12 +10,12 @@ import { Links } from 'react-router-dom';
 
 const ProjectsList = () => {
     const projects = [
-        { id: 1, image: Booki, title: "Site Booki", location: "Projet du site Booki de la formation OCR" },
-        { id: 2, image: Bluel, title: "Site Bluel", location: "Projet de la formation OCR" },
-        { id: 3, image: Carducci, title: "Site Carducci", location: "Projet de la formation OCR" },
-        { id: 4, image: Kasa, title: "Site Kasa", location: "Projet de la formation OCR" },
-        { id: 5, image: menuMaker, title: "Site Menu Maker", location: "Projet de la formation OCR" },
-        { id: 6, image: vieuxGrimoire, title: "Site Vieux Grimoire", location: "Projet de la formation OCR", Links: { github: "https://github.com/example/bluel" }
+        { id: 1, image: Booki, title: "Site Booki", description: "Projet du site Booki de la formation OCR" },
+        { id: 2, image: Bluel, title: "Site Bluel", description: "Projet de la formation OCR" },
+        { id: 3, image: Carducci, title: "Site Carducci", description: "Projet de la formation OCR" },
+        { id: 4, image: Kasa, title: "Site Kasa", description: "Projet de la formation OCR" },
+        { id: 5, image: menuMaker, title: "Site Menu Maker", description: "Projet de la formation OCR" },
+        { id: 6, image: vieuxGrimoire, title: "Site Vieux Grimoire", description: "Projet de la formation OCR", Links: { github: "https://github.com/example/bluel" }
         },
     ];
 
@@ -27,7 +27,7 @@ const ProjectsList = () => {
                     id={project.id} 
                     image={project.image} 
                     title={project.title} 
-                    location={project.location} 
+                    description={project.description} 
                 />
             ))}
         </div>

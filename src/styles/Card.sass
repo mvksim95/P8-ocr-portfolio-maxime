@@ -1,66 +1,60 @@
+@import './Variables'
+
+
 .card
-    width: 250px
-    background: #fd8e44
+    text-decoration: none
+    color: inherit
+    display: flex
+    flex-direction: column
+    align-items: center
+    transition: transform 0.3s ease-in-out
+    width: 330px
+    background: $SpaceGround
     border-radius: 15px
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1)
     overflow: hidden
     text-align: center
     margin: 20px
 
+    &:hover
+        transform: scale(1.05)
+
     &__image-container
+        position: relative
         width: 100%
         overflow: hidden
         border-radius: 15px 15px 0 0
-        transition: transform 0.3s ease-in-out
-        &:hover
-            transform: translateY(-5px)
+
+        &::before
+            content: ""
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 30%  // Le dégradé occupe 15% de l'image
+            background: linear-gradient(to top, rgba(10, 0, 27, 1), rgba(138, 43, 226, 0))  // Violet vers transparent
+            pointer-events: none  // Assure que le dégradé ne bloque pas les interactions
 
     &__image
         width: 100%
         height: 200px
         object-fit: cover
-        
 
     &__content
-        padding: 20px
+        padding: 0px
+
+    &__title, &__description
+        text-decoration: none
+        color: #fff
+        margin: 0
 
     &__title
         font-size: 1.5rem
         font-weight: bold
         margin-bottom: 10px
-        color: #222
 
     &__description
         font-size: 1rem
-        color: #555
+        color: #ccc
         line-height: 1.5
-        margin-bottom: 20px
-
-    &__icons
-        display: flex
-        justify-content: center
-        gap: 15px
-
-        a
-            font-size: 1.5rem
-            color: #333
-            transition: color 0.3s
-
-            &:hover
-                color: #007BFF
-
-.card__image-container
-    position: relative
-    width: 100%
-    overflow: hidden
-    border-radius: 15px 15px 0 0
-
-    &::before
-        content: ""
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        background: linear-gradient(to bottom, rgba(211, 0, 0, 0), #fd8e44)
-
+        margin-bottom: 10px
