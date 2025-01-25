@@ -17,11 +17,11 @@ const Layout = () => {
             <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")}>
               Home
             </NavLink>
-            <NavLink to="/projects" className={({ isActive }) => (isActive ? "active-link" : "")}>
-              Projects
-            </NavLink>
             <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "")}>
               About me
+            </NavLink>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Contact
             </NavLink>
           </nav>
         </section>
