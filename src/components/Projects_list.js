@@ -1,22 +1,20 @@
 import '../styles/Projects_list.sass';
-import Booki from '../assets/Projects/booki.png';
-import Bluel from '../assets/Projects/bluel.png';
-import Carducci from '../assets/Projects/carducci.png';
-import Kasa from '../assets/Projects/kasa.png';
-import menuMaker from '../assets/Projects/menuMaker.png';
-import vieuxGrimoire from '../assets/Projects/vieuxGrimoire.png';
+import Booki from '../assets/Projects/booki.webp';
+import Bluel from '../assets/Projects/bluel.webp';
+import Carducci from '../assets/Projects/carducci.webp';
+import Kasa from '../assets/Projects/kasa.webp';
+import menuMaker from '../assets/Projects/menuMaker.webp';
+import vieuxGrimoire from '../assets/Projects/vieuxGrimoire.webp';
 import Card from './Card';
-import { Links } from 'react-router-dom';
 
 const ProjectsList = () => {
     const projects = [
-        { id: 1, image: Booki, title: "Site Booki", description: "Projet du site Booki de la formation OCR" },
-        { id: 2, image: Bluel, title: "Site Bluel", description: "Projet de la formation OCR" },
-        { id: 3, image: Carducci, title: "Site Carducci", description: "Projet de la formation OCR" },
-        { id: 4, image: Kasa, title: "Site Kasa", description: "Projet de la formation OCR" },
-        { id: 5, image: menuMaker, title: "Site Menu Maker", description: "Projet de la formation OCR" },
-        { id: 6, image: vieuxGrimoire, title: "Site Vieux Grimoire", description: "Projet de la formation OCR", Links: { github: "https://github.com/example/bluel" }
-        },
+        { id: 1, image: Booki, title: "Booki", description: "Front End - Academic Project" },
+        { id: 2, image: Bluel, title: "Sophie Bluel", description: "Front End - Academic Project" },
+        { id: 3, image: Carducci, title: "Nina Carducci", description: "Front End - Academic Project" },
+        { id: 4, image: Kasa, title: "Kasa", description: "Front End - Academic Project" },
+        { id: 5, image: menuMaker, title: "Menu maker by Qwenta", description: "project manager - Academic Project" },
+        { id: 6, image: vieuxGrimoire, title: "Mon vieux grimoire", description: "Fullstack - Academic Project" },
     ];
 
     return (

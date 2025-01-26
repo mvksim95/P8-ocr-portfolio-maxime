@@ -31,27 +31,27 @@
 
     .logo-site
         p
-            color: pink
+            color: $ReactColor
             font-size: 24px
             font-weight: bold
 
     nav
         display: flex
         gap: 20px
-
+        
         a
-            color: black
+            color: white
             text-decoration: none
             font-size: 18px
-            transition: color 0.3s ease
+            transition: color 0.2s ease
 
             &.active-link
                 text-decoration: underline
                 font-weight: 700
-                color: darken(pink, 20%)
+                color: $ReactColor
 
             &:hover
-                color: pink
+                color: $ReactColor
 
 // Style des images
 img
@@ -64,8 +64,24 @@ img
     width: 100%
     text-align: center
     padding: 20px
+    margin: 50px 0 0 0
 
     p
         color: white
         font-size: 16px
         margin: 0
+
+    .social-links
+        display: flex
+        gap: 30px
+        justify-content: center
+        margin-bottom: 15px
+        a
+            color: white
+            text-decoration: none
+            font-size: 18px
+            transition: color 0.2s ease
+
+            &:hover
+                color: $ReactColor
+

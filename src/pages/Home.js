@@ -9,13 +9,13 @@ const Home = () => {
     return (
         <div className='home-content'>
             <div className='Welcome'>
-            {/* <h1 className='Welcome'>Welcome</h1> */}
-            <p>Bienvenue sur mon portfolio ! Passionné par le développement web, je conçois des solutions modernes et adaptées à vos besoins.
-            <br></br>
-            Découvrez mes projets, mon parcours et les compétences que j’ai acquises au fil du temps.
-            <br></br>
-            N'hésitez pas à me contacter pour toute collaboration ou échange professionnel.</p>
-            <img className="vector d'un pc" src={imagePC} alt="photo d'un pc portable" />
+                <p>Welcome to my portfolio !
+                    Passionate about web development, I design modern solutions tailored to your needs.
+                    <br></br>
+                    Explore my projects, my journey, and the skills I have acquired over time.
+                    <br></br>
+                    Feel free to contact me for any collaboration or professional exchange.</p>
+                <img className="vector d'un pc" src={imagePC} alt="pc portable design programming" />
             </div>
             {<Skills />}
             {<ProjectsList />}

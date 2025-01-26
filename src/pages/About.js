@@ -1,4 +1,4 @@
-import imageProfil from '../assets/profil_circle.png'
+import imageProfil from '../assets/profil.webp'
 import Presentation from '../components/Presentation'
 
 const About = () => {

@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Layout from './components/Layout'
 import ProjectDetail from "./pages/ProjectDetail";
 import About from './pages/About'
+import Contact from './pages/Contact'
 
 const AppRouter = () => {
   return (
@@ -10,6 +11,7 @@ const AppRouter = () => {
       <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
       <Route path="/project/:id" element={<ProjectDetail />} />
       <Route path="*" element={<h2>Page non trouvée</h2>} />
       </Route>

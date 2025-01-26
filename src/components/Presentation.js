@@ -4,29 +4,33 @@ import '../styles/Presentation.sass'
 const Presentation = ({ image, altText, title }) => {
     return (
         <div className='Banner'>
+            <div className='presentation'>
             <img src={image} alt={altText} />
             <h2 className='CoverTitle'>{title}</h2>
-            <p>Salut, moi c’est Maxime ! 👋
-Diplômé de l'école supérieure de photographie EFET à Paris, j'ai d'abord exploré le monde à travers l'objectif, capturant des instants uniques et des émotions authentiques. 🎓📸 
-<br/>
-<br/>
-Mais au fond, j'ai toujours été un geek passionné par la technologie et le web ! Cette passion m'a naturellement conduit vers le développement fullstack JavaScript, où je fusionne mon sens artistique avec des compétences techniques pour créer des expériences utilisateur immersives.
-<br/>
-<br/>
-Que ce soit en concevant des interfaces élégantes avec React ou en développant des backends solides avec Node.js, je m'efforce de transformer des idées en réalités numériques performantes et accessibles.
-<br/>
-<br/>
-🚀 Mon objectif ? Allier créativité et technologie pour concevoir des applications intuitives et sur mesure, répondant aux besoins des utilisateurs.
-<br/>
-<br/>
-💡 Ma philosophie ? Apprendre en continu, partager mes connaissances et collaborer pour créer des solutions à la fois esthétiques et fonctionnelles.
-<br/>
-<br/>
-Si tu souhaites discuter de code, de projets ou simplement échanger, n'hésite pas à me contacter ! 👨‍💻✨
-<br/>
-<br/>
-[Ajoute ici tes liens vers GitHub, LinkedIn, etc.]</p>
+            <p>
+                Hi, I'm Maxime ! A graduate of the EFET School of Photography in Paris, I first explored the world through my lens, capturing unique moments and genuine emotions.
+                <br />
+                <br />
+                But deep down, I've always been a tech enthusiast and a web geek! This passion naturally led me to fullstack JavaScript development, where I blend my artistic sense with technical skills to create immersive user experiences.
+                <br />
+                <br />
+                Whether it's designing sleek interfaces with React or building robust backends with Node.js, I strive to turn ideas into high-performance and accessible digital realities.
+                <br />
+                <br />
+                My goal ? To combine creativity and technology to develop intuitive, tailor-made applications that meet users' needs.
+                <br />
+                <br />
+                My philosophy ? To keep learning, share my knowledge, and collaborate to create solutions that are both aesthetic and functional.
+                <br />
+                <br />
+                If you'd like to talk about code, projects, or just have a chat, feel free to reach out! ✨
+            </p>
+            </div>
+            <div className='skills'>
+                <p>List of frameworks i had to use in my journey</p>
+            </div>
         </div>
+
     );
 };
 
