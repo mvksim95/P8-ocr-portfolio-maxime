@@ -4,6 +4,8 @@ import ContactForm from "../components/ContactForm";
 const Contact = () => {
     return (
         <div className='contact-content'>
+            {/* <div className="gradient-line"></div> */}
+            <p className="text">DBAnJZ6</p>
             <ContactForm />
         </div>
     )

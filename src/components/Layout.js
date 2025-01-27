@@ -4,6 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import VideoBackground from '../components/VideoBackground';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import logo from '../assets/logo.webp'
 
 const Layout = () => {
   return (
@@ -13,7 +14,8 @@ const Layout = () => {
         <header>
           <section className='Header'>
             <div className='logo-site'>
-              <p>&lt;Maxime Tison /&gt;</p>
+            <img className="vector d'un pc" src={logo} alt="pc portable design programming" />
+              {/* <p>&lt;Maxime Tison /&gt;</p> */}
             </div>
             <nav className='nav'>
               <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")}>

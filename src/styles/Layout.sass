@@ -1,6 +1,10 @@
 @import './Variables'
 @import './Mixins'
-
+@font-face
+  font-family: 'linecap'
+  src: url('../assets/fonts/Linecap.ttf') format('truetype')
+  font-weight: bold
+  font-style: normal
 // Centrage du Layout
 .Layout
     // background-color: $SpaceGround
@@ -25,15 +29,20 @@
     max-width: 1240px
     width: 100vw
     display: flex
-    align-items: center
+    margin-top: 15px
+    // align-items: center
     justify-content: space-between
     padding: 0px 40px
 
     .logo-site
+        img
+            width: auto
+            height: 90px
         p
             color: $ReactColor
             font-size: 24px
             font-weight: $Text
+            
 
     nav
         display: flex
@@ -47,6 +56,8 @@
 
             &.active-link
                 text-decoration: underline
+                text-underline-offset: -27px
+                text-decoration-thickness: 2px
                 font-weight: 400
                 color: $ReactColor
 
@@ -70,6 +81,10 @@ img
         color: white
         font-size: 16px
         margin: 0
+        text-decoration: underline
+        text-underline-offset: 5px
+        text-decoration-thickness: 1px
+        text-decoration-color: $ReactColor
 
     .social-links
         display: flex
