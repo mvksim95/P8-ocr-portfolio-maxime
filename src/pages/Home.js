@@ -12,7 +12,7 @@ const Home = () => {
             <span className='welcome'>W</span>
                 <div className='Welcome'>
                     <p>elcome to my portfolio !
-                        Passionate about web development, I design modern solutions tailored to your needs.
+                        I design modern solutions tailored to your needs.
                         <br></br>
                         Explore my projects, my journey, and the skills I have acquired over time.
                         <br></br>
