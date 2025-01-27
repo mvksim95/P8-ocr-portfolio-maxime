@@ -7,6 +7,7 @@ import menuMaker from '../assets/Projects/menuMaker.webp';
 import vieuxGrimoire from '../assets/Projects/vieuxGrimoire.webp';
 import Card from './Card';
 
+
 const ProjectsList = () => {
     const projects = [
         { id: 1, image: Booki, title: "Booki", description: "Front End - Academic Project" },
@@ -24,7 +25,7 @@ const ProjectsList = () => {
                     key={project.id} 
                     id={project.id} 
                     image={project.image} 
-                    title={project.title} 
+                    title={project.title}
                     description={project.description} 
                 />
             ))}

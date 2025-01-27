@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Card.sass";
 
 
-const Card = ({ id, image, title, description }) => {
+const Card = ({ id, image, title, description, icon }) => {
   return (
     <Link to={`/project/${id}`} className="card">
       <div className="card__image-container">

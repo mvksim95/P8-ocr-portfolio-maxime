@@ -19,13 +19,13 @@ const ProjectDetail = () => {
       image: bookiImage
     },
     2: {
-      title: "Bluel Website",
+      title: "Sophie Bluel Website",
       role: `Role: Frontend Developer`,
       description: `Development of an authentication system with credential verification and session management via localStorage. Implementation of interactive modals for project management (adding, deleting) using JavaScript and API calls to dynamically update the gallery.`,
       image: bluelImage
     },
     3: {
-      title: "Carducci Website",
+      title: "Nina Carducci Website",
       role: `Role: Frontend Developer`,
       description: `Debugging and optimization
   Complete site audit and optimization by improving accessibility, SEO, and best development practices. Analysis and correction of errors using tools such as Lighthouse and WAVE Extension Tool to ensure compliance with web standards. Implementation of semantic tags and structured data with schema.org for better search engine ranking and content understanding.`,
@@ -38,13 +38,13 @@ const ProjectDetail = () => {
       image: kasaImage
     },
     5: {
-      title: "Menu Maker Website",
+      title: "Menu Maker by Qwenta Website",
       role: `Role: Project Manager`,
       description: `Planning and managing the application development, ensuring goals and deadlines are met. Project organization using a Kanban board on Notion, task breakdown into User Stories, and tracking sprint progress. Team coordination, drafting of technical and functional specifications, and preparing sprint reviews to validate deliverables. Presentation of strategic choices and support in implementing best practices.`,
       image: menuMakerImage
     },
     6: {
-      title: "Vieux Grimoire Website",
+      title: "Mon Vieux Grimoire Website",
       role: `Role: Fullstack Developer`,
       description: `Full development of the website with a backend architecture using Node.js, Express, and MongoDB. Implementation of REST API routes for book and user management, with a strong focus on data validation and security (JWT, bcrypt). On the frontend side, integration of the user interface in React.js, including a dynamic book display system and an interactive carousel. Performance optimization and adherence to best practices in accessibility and SEO.`,
       image: vieuxGrimoireImage
