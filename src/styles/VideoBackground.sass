@@ -1,20 +1,27 @@
 @import './Variables'
 
 .video-section
-    position: absolute
+    position: fixed
     top: 0
     left: 0
     width: 100vw
     height: 100vh
     overflow: hidden
-    z-index: -1//vant le background mais derrière le contenu
-    background: $SpaceGround
+    z-index: -1  // Place la vidéo derrière tout le contenu
+    background: $SpaceGround  // Couleur de fond de secours
 
 .background-video
     position: absolute
-    top: 0
-    left: 0
-    width: 100vw
-    height: 100vh
-    object-fit: cover
-    opacity: 0.2  // Ajuste la visibilité pour un effet de fond
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: auto
+    height: auto
+    min-width: 100vw
+    min-height: 100vh
+    object-fit: cover  // Remplit toujours l'écran sans bordures
+    opacity: 0.3
+
+
+
+
