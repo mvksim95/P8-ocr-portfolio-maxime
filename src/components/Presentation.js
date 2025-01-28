@@ -6,6 +6,7 @@ import { faTurnDown } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 
+
 const Presentation = ({ image, altText, title }) => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const reactColor = 'rgb(97, 219, 251)'; // Correspond à ta variable Sass $ReactColor

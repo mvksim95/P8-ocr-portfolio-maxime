@@ -21,7 +21,7 @@ const Home = () => {
                 </div>
             </div>
             {/* {<Skills />} */}
-            <div className='title'><p>Projetcs</p></div>
+            <div className='title'><p>Projects</p></div>
             <div className="gradient-line"></div>
             {<ProjectsList />}
         </div>

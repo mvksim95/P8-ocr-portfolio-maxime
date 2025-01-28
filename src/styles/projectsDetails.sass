@@ -5,43 +5,58 @@
   margin: 0 auto
   text-align: center
   padding: 20px
-
+  margin-top: 30px
   .title, .description, .role
     color: white
 
   .title
     font-size: 2rem
     font-weight: 300
-    margin-bottom: 10px
-    margin-top: 20px
+    margin: 20px 0 10px
 
   .gradient-line
-    margin-bottom: 20px
+    margin-bottom: 40px
 
-  .role
+  .role, .description
     font-size: 1.2rem
     line-height: 1.6
     max-width: 1200px
-    margin: 0 auto
+    margin: 10px auto
     text-align: justify
-    margin-top: 10px
+
+  .role
     text-decoration: underline
     text-underline-offset: 5px
     text-decoration-thickness: 1px
     text-decoration-color: $ReactColor
 
   .description
-    font-size: 1.2rem
     font-weight: 200
-    line-height: 1.2
-    max-width: 1200px
-    margin: 0 auto
-    text-align: justify
-    margin-top: 10px
 
   .picture
     width: auto
-    height: 800px
-    margin-top: 20px
-    border-radius: 10px
-    margin-top: 50px
+    height: 70vh // Utilisation d'unités relatives
+    // border-radius: 10px
+    margin: 50px auto
+
+.title-content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  align-items: center
+  color: white
+  margin: 0 50px
+
+  a
+    color: white
+    text-decoration: none
+    font-size: 18px
+    transition: color 0.2s ease
+    &:hover
+      color: $ReactColor
+    &:visited
+      color: none
+  .icon
+    font-size: 35px
+    font-weight: 300
+    cursor: pointer
