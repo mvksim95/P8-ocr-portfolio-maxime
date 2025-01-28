@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className='contact-content'>
             {/* <div className="gradient-line"></div> */}
-            <p className="text">DBNRQJZA</p>
+            <p className="text">DB___g_A$</p>
             <ContactForm />
         </div>
     )

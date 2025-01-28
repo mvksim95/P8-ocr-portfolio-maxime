@@ -65,7 +65,7 @@ const Presentation = ({ image, altText, title }) => {
             </div>
             <div className='skills'>
                 <div className='skills-title'>
-                    <p>List of frameworks i had to use in my journey</p>
+                    <p>List of technologies i had to use in my journey</p>
                     <FontAwesomeIcon className='icon' icon={faTurnDown} />
                 </div>
                 <div className='Skills-logo'>
