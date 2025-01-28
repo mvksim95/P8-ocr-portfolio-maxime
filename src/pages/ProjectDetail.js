@@ -77,7 +77,7 @@ const ProjectDetail = () => {
           onClick={() => navigate('/')} // Navigue vers la page d'accueil
         />
         <h1 className="title">{project.title}</h1>
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <a href={project.link} className="gitIcon" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
       </div>
