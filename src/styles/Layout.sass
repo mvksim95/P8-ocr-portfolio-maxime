@@ -1,10 +1,10 @@
 @import './Variables'
 @import './Mixins'
 @font-face
-  font-family: 'linecap'
-  src: url('../assets/fonts/Linecap.ttf') format('truetype')
-  font-weight: bold
-  font-style: normal
+    font-family: 'linecap'
+    src: url('../assets/fonts/Linecap.ttf') format('truetype')
+    font-weight: bold
+    font-style: normal
 // Centrage du Layout
 .Layout
     // background-color: $SpaceGround
@@ -18,7 +18,7 @@
     position: relative
     z-index: 1
     width: 100%
-    height: 100%  // S'assurer que le contenu remplit l'espace
+    height: 100% // S'assurer que le contenu remplit l'espace
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -30,45 +30,40 @@
     width: 100vw
     display: flex
     margin-top: 15px
-    // align-items: center
-    justify-content: space-between
-    padding: 0px 40px
-
+    justify-content: space-between // Sépare le logo et la navigation
+    padding: 0 40px
+    @include respond-to(mobile)
+        margin-top: 12px
+    
     .logo-site
         img
             width: auto
-            height: 90px
-        p
-            color: $ReactColor
-            font-size: 24px
-            font-weight: $Text
-            
-
+            height: 90px // Taille du logo
+            @include respond-to(mobile)
+                width: auto
+                height: 50px
+                margin-left: 15px
     nav
         display: flex
         gap: 20px
-        
+        @include respond-to(mobile)
+            max-width: 769px
+            width: 100%
+            justify-content: flex-end
+            margin-right: 15px
         a
             color: white
             text-decoration: none
             font-size: 18px
             transition: color 0.2s ease
-
             &.active-link
                 text-decoration: underline
                 text-underline-offset: -27px
                 text-decoration-thickness: 2px
                 font-weight: 400
                 color: $ReactColor
-
             &:hover
                 color: $ReactColor
-
-// Style des images
-img
-    width: 350px
-    height: 350px
-    object-fit: cover
 
 // Footer
 .Footer
@@ -99,4 +94,3 @@ img
 
             &:hover
                 color: $ReactColor
-

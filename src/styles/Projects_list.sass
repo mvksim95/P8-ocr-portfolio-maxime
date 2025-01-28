@@ -1,7 +1,10 @@
-
+@import './Mixins'
 .gallery
     display: flex
     grid-gap: 50px 30px
     justify-content: center
     flex-wrap: wrap
     margin: 25px 0
+    @include respond-to(mobile)
+        grid-gap: 25px
+    

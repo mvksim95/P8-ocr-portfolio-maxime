@@ -1,5 +1,5 @@
 @import './Variables'
-
+@import './Mixins'
 
 .card
     text-decoration: none
@@ -15,7 +15,9 @@
     overflow: hidden
     text-align: center
     margin: 20px
-
+    @include respond-to(mobile)
+        width: 300px
+    
     &:hover
         transform: scale(1.05)
 
