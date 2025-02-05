@@ -10,12 +10,12 @@ import Card from './Card';
 
 const ProjectsList = () => {
     const projects = [
-        { id: 1, image: Booki, title: "Booki", description: "Front End - Academic Project" },
-        { id: 2, image: Bluel, title: "Sophie Bluel", description: "Front End - Academic Project" },
-        { id: 3, image: Carducci, title: "Nina Carducci", description: "Front End - Academic Project" },
-        { id: 4, image: Kasa, title: "Kasa", description: "Front End - Academic Project" },
-        { id: 5, image: menuMaker, title: "Menu maker by Qwenta", description: "project manager - Academic Project" },
-        { id: 6, image: vieuxGrimoire, title: "Mon vieux grimoire", description: "Fullstack - Academic Project" },
+        { id: 1, image: Booki, title: "Booki", description: "Front End - Academic OCR Project" },
+        { id: 2, image: Bluel, title: "Sophie Bluel", description: "Front End - Academic OCR Project" },
+        { id: 3, image: Carducci, title: "Nina Carducci", description: "Front End - Academic OCR Project" },
+        { id: 4, image: Kasa, title: "Kasa", description: "Front End - Academic OCR Project" },
+        { id: 5, image: menuMaker, title: "Menu maker by Qwenta", description: "project manager - Academic OCR Project" },
+        { id: 6, image: vieuxGrimoire, title: "Mon vieux grimoire", description: "Fullstack - Academic OCR Project" },
     ];
 
     return (

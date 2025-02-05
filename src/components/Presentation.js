@@ -12,27 +12,21 @@ const Presentation = ({ image, altText, title }) => {
     const reactColor = 'rgb(97, 219, 251)'; // Correspond à ta variable Sass $ReactColor
     const fontWeightHover = 500;
 
-    const text = `Hi, I'm Maxime ! A graduate of the EFET School of Photography in Paris, 
-    I first explored the world through my lens, capturing unique moments and genuine emotions.
-    
-    But deep down, I've always been a tech enthusiast and a web geek! This passion naturally led me 
-    to fullstack JavaScript development, where I blend my artistic sense with technical skills 
-    to create immersive user experiences.
-    
-    Whether it's designing sleek interfaces with React or building robust backends with Node.js, 
-    I strive to turn ideas into high-performance and accessible digital realities.
-    
-    My goal? To combine creativity and technology to develop intuitive, tailor-made applications 
-    that meet users' needs.
-    
-    My philosophy? To keep learning, share my knowledge, and collaborate to create solutions 
-    that are both aesthetic and functional.
-    
-    If you'd like to talk about code, projects, or just have a chat, feel free to reach out !`
+    const text = `Hi, I'm Maxime! A graduate of the EFET School of Photography in Paris and a certified Web Developer from OpenClassrooms, I began my journey by exploring the world through my lens, capturing unique moments and authentic emotions.
+
+But my passion for technology and web development was always there, waiting to emerge. This passion naturally led me to fullstack JavaScript development, where I merge my artistic sensibility with technical expertise to craft immersive and engaging user experiences.
+
+Whether it's designing modern, sleek interfaces with React or building robust and scalable backends with Node.js, I aim to transform ideas into high-performance, user-friendly digital solutions.
+
+My goal? To combine creativity and innovation in developing intuitive, tailor-made applications that meet users' real needs.
+
+My philosophy? To keep learning, share what I know, and collaborate with others to create solutions that are both visually appealing and technically effective.
+
+If you want to chat about code, projects, or anything tech-related, feel free to reach out!`
     return (
         <div className='Banner'>
             <div className='presentation'>
-                <img src={image} alt={altText} className='profil-picture'/>
+                <img src={image} alt={altText} className='profil-picture' />
                 <div className='presentation-content'>
                     <p>
                         {text.split("").map((letter, index) => (
